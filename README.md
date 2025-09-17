@@ -47,6 +47,7 @@ BOTMAKS è un assistente vocale **completamente hands-free** progettato per Rasp
 
 ### ⚡ **Requisiti Aggiuntivi**
 - Alimentazione 5V adeguata (i LED possono richiedere corrente significativa)
+- [**Connettore DC 5,5mm**](https://amzn.to/3KpGCw8) - Kit connettori alimentazione
 - Cavi jumper per collegamenti
 - Breadboard o PCB per prototipazione (opzionale)
 
