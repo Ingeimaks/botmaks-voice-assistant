@@ -21,30 +21,6 @@ BOTMAKS è un assistente vocale **completamente hands-free** progettato per Rasp
 
 ---
 
-## 📋 Nomi Suggeriti per Repository GitHub
-
-Ecco alcuni nomi professionali per il tuo repository GitHub:
-
-### 🏆 **Raccomandati**
-- `botmaks-voice-assistant` - Nome chiaro e professionale
-- `raspberry-pi-voice-ai` - Descrive la piattaforma e funzione
-- `gemini-tof-assistant` - Evidenzia le tecnologie chiave
-- `hands-free-pi-assistant` - Sottolinea la caratteristica principale
-
-### 🎯 **Alternativi**
-- `botmaks-ai-companion`
-- `proximity-voice-assistant`
-- `raspberry-gemini-bot`
-- `tof-activated-assistant`
-- `smart-pi-voice-hub`
-
-### 💡 **Creativi**
-- `whisper-proximity` - Poetico e descrittivo
-- `voice-sphere` - Riferimento all'anello LED
-- `proximity-ai` - Semplice ed efficace
-
----
-
 ## 🎨 Comportamento LED
 - **Standby:** spento  
 - **Ascolto (trigger ToF):** 2 lampeggi **ciano**  
@@ -289,6 +265,14 @@ Se hai problemi o domande:
 - Apri un **Issue** su GitHub
 - Controlla la sezione **🔍 Test e Diagnostica** per problemi comuni
 - Verifica che tutti i collegamenti hardware siano corretti
+
+---
+
+## 📺 Seguici per Altri Progetti
+
+✍️ **Follow the Ingeimaks channel for new ESP32 projects and other electronics, Arduino and 3D printing content!**
+
+🔗 [**Ingeimaks Channel**](https://github.com/Ingeimaks) - Scopri altri progetti innovativi!
 
 ---
 
