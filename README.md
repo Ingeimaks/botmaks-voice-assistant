@@ -30,12 +30,25 @@ BOTMAKS è un assistente vocale **completamente hands-free** progettato per Rasp
 ---
 
 ## 🔧 Hardware Richiesto
-- Raspberry Pi Zero / Zero W (o simili)
-- **INMP441** (microfono I²S)
-- **MAX98357A** (amplificatore/cassa I²S)
-- **VL53L0X** (Time-of-Flight ToF su I²C)
-- **Anello WS2812** (35-36 LED consigliati)
-- Alimentazione 5 V adeguata (i LED possono richiedere corrente)
+
+### 🛒 **Lista Componenti con Link di Acquisto**
+
+| Componente | Descrizione | Link Acquisto |
+|------------|-------------|---------------|
+| **Raspberry Pi Zero W** | Microcomputer principale | [🛒 Acquista su Amazon](https://amzn.to/4mk3E4O) |
+| **VL53L0X** | Sensore Time-of-Flight (ToF) su I²C | [🛒 Acquista su Amazon](https://amzn.to/3K3SuUF) |
+| **INMP441** | Microfono I²S professionale | [🛒 Acquista su Amazon](https://amzn.to/46ouB1v) |
+| **MAX98357A** | Amplificatore audio I²S | [🛒 Acquista su Amazon](https://amzn.to/41XfT09) |
+| **Anello WS2812** | 35-36 LED programmabili | [🛒 Acquista su Amazon](https://amzn.to/4mh8YpB) |
+| **Speaker** | Altoparlante per output audio | [🛒 Acquista su Amazon](https://amzn.to/4nENIvo) |
+
+### 🏗️ **Struttura 3D**
+📦 **Scarica i file STL per la struttura**: [**MakerWorld - BOTMAKS Structure**](https://makerworld.com/it/models/1802740-botmaks-a-next-gen-voice-assistant-beyond-alexa#profileId-1922529)
+
+### ⚡ **Requisiti Aggiuntivi**
+- Alimentazione 5V adeguata (i LED possono richiedere corrente significativa)
+- Cavi jumper per collegamenti
+- Breadboard o PCB per prototipazione (opzionale)
 
 ### 🔌 Collegamenti (pin Raspberry)
 
