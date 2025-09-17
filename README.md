@@ -38,6 +38,10 @@ BOTMAKS è un assistente vocale **completamente hands-free** progettato per Rasp
 - Alimentazione 5 V adeguata (i LED possono richiedere corrente)
 
 ### 🔌 Collegamenti (pin Raspberry)
+
+![Schema Collegamenti Hardware](Collegamenti.png)
+*Schema visuale dei collegamenti hardware per BOTMAKS*
+
 **I²S (comune a mic + cassa):**
 - **GPIO18 / BCLK** (pin 12) → BCLK di INMP441 e MAX98357A  
 - **GPIO19 / LRCLK/WS** (pin 35) → LRC/WS di INMP441 e MAX98357A  
