@@ -1,112 +1,112 @@
-# BOTMAKS – Assistente Vocale Intelligente per Raspberry Pi
+# BOTMAKS – Intelligent Voice Assistant for Raspberry Pi
 
-> **Un assistente vocale hands-free potenziato da Google Gemini con sensori avanzati e feedback visivo**
+> **A hands-free voice assistant powered by Google Gemini with advanced sensors and visual feedback**
 
-## 🚀 Caratteristiche Principali
+## 🚀 Main Features
 
-BOTMAKS è un assistente vocale **completamente hands-free** progettato per Raspberry Pi Zero/Zero W che combina:
+BOTMAKS is a **completely hands-free** voice assistant designed for Raspberry Pi Zero/Zero W that combines:
 
-- 🎯 **Attivazione automatica** tramite sensore di prossimità ToF VL53L0X (≤10 cm)
-- 🎤 **Audio I²S professionale** con microfono INMP441 e amplificatore MAX98357A
-- 🤖 **Intelligenza artificiale** powered by Google Gemini (STT + conversazione + TTS)
-- 💡 **Feedback visivo** con anello LED WS2812 (35-36 LED) per indicare lo stato
-- ⚡ **Plug & Play** - script principale `talk_5s_gemini_tof_led.py` già funzionante
+- 🎯 **Automatic activation** via ToF VL53L0X proximity sensor (≤10 cm)
+- 🎤 **Professional I²S Audio** with INMP441 microphone and MAX98357A amplifier
+- 🤖 **Artificial Intelligence** powered by Google Gemini (STT + conversation + TTS)
+- 💡 **Visual Feedback** with WS2812 LED ring (35-36 LEDs) to indicate status
+- ⚡ **Plug & Play** - main script `talk_5s_gemini_tof_led.py` ready to use
 
-### 🎭 Come Funziona
-1. **Avvicinati** al dispositivo (≤10 cm) → il sensore ToF rileva la presenza
-2. **Parla** per 5 secondi → il microfono I²S registra audio di qualità
-3. **Attendi** → Gemini elabora la richiesta e genera una risposta intelligente
-4. **Ascolta** → la risposta viene riprodotta tramite TTS sulla cassa I²S
-5. **Osserva** → i LED mostrano lo stato in tempo reale con animazioni colorate
-
----
-
-## 🎨 Comportamento LED
-- **Standby:** spento  
-- **Ascolto (trigger ToF):** 2 lampeggi **ciano**  
-- **Caricamento/Elaborazione:** effetto scorrimento **blu/violetto**  
-- **Parlato (TTS):** “breathing” **blu/violetto**  
+### 🎭 How It Works
+  1. **Get close** to the device (≤10 cm) → the ToF sensor detects presence
+  2. **Speak** for 5 seconds → the I²S microphone records high-quality audio
+  3. **Wait** → Gemini processes the request and generates an intelligent response
+  4. **Listen** → the response is played via TTS on the I²S speaker
+  5. **Observe** → the LEDs show the status in real time with colorful animations
 
 ---
 
-## 🔧 Hardware Richiesto
+## 🎨 LED Behavior
+- **Standby:** off  
+- **Listening (ToF trigger):** 2 **cyan** flashes  
+- **Loading/Processing:** **blue/violet** scrolling effect  
+- **Speaking (TTS):** **blue/violet** “breathing”  
 
-### 🛒 **Lista Componenti con Link di Acquisto**
+---
 
-| Componente | Descrizione | Link Acquisto |
+## 🔧 Hardware Required
+
+### 🛒 **Components List with Purchase Links**
+
+| Component | Description | Purchase Link |
 |------------|-------------|---------------|
-| **Raspberry Pi Zero W** | Microcomputer principale | [🛒 Acquista su Amazon](https://amzn.to/4mk3E4O) |
-| **VL53L0X** | Sensore Time-of-Flight (ToF) su I²C | [🛒 Acquista su Amazon](https://amzn.to/3K3SuUF) |
-| **INMP441** | Microfono I²S professionale | [🛒 Acquista su Amazon](https://amzn.to/46ouB1v) |
-| **MAX98357A** | Amplificatore audio I²S | [🛒 Acquista su Amazon](https://amzn.to/41XfT09) |
-| **Anello WS2812** | 35-36 LED programmabili | [🛒 Acquista su Amazon](https://amzn.to/4mh8YpB) |
-| **Speaker** | Altoparlante per output audio | [🛒 Acquista su Amazon](https://amzn.to/4nENIvo) |
+| **Raspberry Pi Zero W** | Main microcomputer | [🛒 Buy on Amazon](https://amzn.to/4mk3E4O) |
+| **VL53L0X** | Time-of-Flight (ToF) sensor on I²C | [🛒 Buy on Amazon](https://amzn.to/3K3SuUF) |
+| **INMP441** | Professional I²S microphone | [🛒 Buy on Amazon](https://amzn.to/46ouB1v) |
+| **MAX98357A** | I²S audio amplifier | [🛒 Buy on Amazon](https://amzn.to/41XfT09) |
+| **WS2812 Ring** | 35-36 programmable LEDs | [🛒 Buy on Amazon](https://amzn.to/4mh8YpB) |
+| **Speaker** | Speaker for audio output | [🛒 Buy on Amazon](https://amzn.to/4nENIvo) |
 
-### 🏗️ **Struttura 3D**
-📦 **Scarica i file STL per la struttura**: [**MakerWorld - BOTMAKS Structure**](https://makerworld.com/it/models/1802740-botmaks-a-next-gen-voice-assistant-beyond-alexa#profileId-1922529)
+### 🏗️ **3D Structure**
+📦 **Download the STL files for the structure**: [**MakerWorld - BOTMAKS Structure**](https://makerworld.com/it/models/1802740-botmaks-a-next-gen-voice-assistant-beyond-alexa#profileId-1922529)
 
-### ⚡ **Requisiti Aggiuntivi**
-- Alimentazione 5V adeguata (i LED possono richiedere corrente significativa)
-- [**Connettore DC 5,5mm**](https://amzn.to/3KpGCw8) - Kit connettori alimentazione
-- Cavi jumper per collegamenti
-- Breadboard o PCB per prototipazione (opzionale)
+### ⚡ **Additional Requirements**
+- Adequate 5V power supply (LEDs may require significant current)
+- [**5.5mm DC Connector**](https://amzn.to/3KpGCw8) - Power connector kit
+- Jumper wires for connections
+- Breadboard or PCB for prototyping (optional)
 
-### 🔌 Collegamenti (pin Raspberry)
+### 🔌 Connections (Raspberry pins)
 
-![Schema Collegamenti Hardware](Collegamenti.png)
-*Schema visuale dei collegamenti hardware per BOTMAKS*
+![Hardware Connections Diagram](Collegamenti.png)
+*Visual diagram of hardware connections for BOTMAKS*
 
-**I²S (comune a mic + cassa):**
-- **GPIO18 / BCLK** (pin 12) → BCLK di INMP441 e MAX98357A  
-- **GPIO19 / LRCLK/WS** (pin 35) → LRC/WS di INMP441 e MAX98357A  
+**I²S (common to mic + speaker):**
+- **GPIO18 / BCLK** (pin 12) → BCLK of INMP441 and MAX98357A  
+- **GPIO19 / LRCLK/WS** (pin 35) → LRC/WS of INMP441 and MAX98357A  
 
-**Dati:**
+**Data:**
 - **GPIO21 / PCM_DOUT** (pin 40) → **DIN** (MAX98357A)  
-- **DOUT (INMP441)** → il microfono espone SD/DOUT verso la Pi (lettura I²S)
+- **DOUT (INMP441)** → the microphone exposes SD/DOUT to the Pi (I²S reading)
 
-**Alimentazioni:**
+**Power Supplies:**
 - **INMP441:** 3.3 V & GND  
 - **MAX98357A:** 5 V & GND  
 
 **ToF (I²C):**
 - **SDA:** GPIO2 (pin 3)  
 - **SCL:** GPIO3 (pin 5)  
-- **VIN:** 3.3 V (o 5 V se il breakout lo consente), **GND**  
-- **XSHUT:** consigliato pull-up a 3.3 V (10 k)
+- **VIN:** 3.3 V (or 5 V if the breakout allows), **GND**  
+- **XSHUT:** recommended pull-up to 3.3 V (10 k)
 
-**LED WS2812 (via PWM):**
+**WS2812 LED (via PWM):**
 - **DIN:** **GPIO13** (pin 33, PWM1)  
-- **5 V** e **GND** comuni alla Pi
+- **5 V** and **GND** common to the Pi
 
 ---
 
-## ⚙️ Sistema & Abilitazioni
-Raspberry Pi OS (Lite consigliato). Abilita:
+## ⚙️ System & Enablements
+Raspberry Pi OS (Lite recommended). Enable:
 ```bash
 sudo raspi-config
 # Interface Options → I2C → Enable
-# Interface Options → Audio I2S abilitato (a seconda dell'immagine)
+# Interface Options → Audio I2S enabled (depending on the image)
 ```
 
-Config **/boot/firmware/config.txt** (esempio):
+Config **/boot/firmware/config.txt** (example):
 ```ini
 dtparam=i2c_arm=on
 dtparam=i2s=on
 dtoverlay=max98357a
-# overlay microfono I²S (varia per immagine):
-# dtoverlay=i2s-mic      # se presente
-# (in alternativa: dtoverlay=googlevoicehat-soundcard)
+# overlay microphone I²S (varies by image):
+# dtoverlay=i2s-mic      # if present
+# (alternative: dtoverlay=googlevoicehat-soundcard)
 ```
-> Non attivare più overlay audio in conflitto.
+> Do not enable multiple conflicting audio overlays.
 
-Riavvia:
+Reboot:
 ```bash
 sudo reboot
 ```
 
 ---
 
-## 📦 Installazione Dipendenze
+## 📦 Installation Dependencies
 ```bash
 sudo apt update
 sudo apt install -y python3-venv python3-pip ffmpeg alsa-utils i2c-tools
@@ -118,33 +118,33 @@ pip install requests adafruit-blinka adafruit-circuitpython-vl53l0x rpi-ws281x
 
 ---
 
-## 🔑 Configurazione API Key Gemini
-1. Accedi a **Google AI Studio** (Gemini API) con il tuo account Google.  
-2. Crea una **API key**.  
-3. **Non** committarla su GitHub. Salvala come variabile d’ambiente sul device.
+## 🔑 Gemini API Key Configuration
+1. Access **Google AI Studio** (Gemini API) with your Google account.  
+2. Create an **API key**.  
+3. **Do not** commit it to GitHub. Save it as an environment variable on the device.
 
-Esempi:
+Examples:
 ```bash
-# sessione corrente
-export GEMINI_API_KEY="la_tua_chiave"
-export MIC_DEVICE="hw:0,0"   # se il device ALSA è diverso, cambialo
+# current session
+export GEMINI_API_KEY="your_key"
+export MIC_DEVICE="hw:0,0"   # if the ALSA device is different, change it
 
-# avvio manuale (serve root per i LED via /dev/mem)
+# manual start (requires root for LEDs via /dev/mem)
 sudo --preserve-env=GEMINI_API_KEY,MIC_DEVICE /home/botmaks/assistente/bin/python /home/botmaks/talk_5s_gemini_tof_led.py
 ```
 
 ---
 
-## 🚀 Avvio Automatico come Servizio (systemd)
-**1) Variabili in /etc/default**
+## 🚀 Automatic Startup as a Service (systemd)
+**1) Variables in /etc/default**
 ```bash
 sudo tee /etc/default/botmaks-assistant >/dev/null <<'EOF'
-GEMINI_API_KEY=INSERISCI_LA_TUA_CHIAVE
+GEMINI_API_KEY=INSERT_YOUR_KEY
 MIC_DEVICE=hw:0,0
 EOF
 ```
 
-**2) Unità systemd**
+**2) Systemd Unit**
 ```bash
 sudo tee /etc/systemd/system/botmaks-assistant.service >/dev/null <<'EOF'
 [Unit]
@@ -168,13 +168,13 @@ WantedBy=multi-user.target
 EOF
 ```
 
-**3) Abilita & avvia**
+**3) Enable & Start**
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now botmaks-assistant
 ```
 
-**4) Log & gestione**
+**4) Logs & Management**
 ```bash
 sudo systemctl status botmaks-assistant
 sudo journalctl -u botmaks-assistant -f
@@ -184,53 +184,53 @@ sudo systemctl stop botmaks-assistant
 
 ---
 
-## 🎮 Uso Manuale
+## 🎮 Manual Usage
 ```bash
-# con LED WS2812 su GPIO13 serve root
+# with WS2812 LED on GPIO13 requires root
 sudo --preserve-env=GEMINI_API_KEY,MIC_DEVICE /home/botmaks/assistente/bin/python /home/botmaks/talk_5s_gemini_tof_led.py
 ```
-- Avvicina la mano a **≤10 cm** → 2 blink ciano → registrazione 5 s  
-- LED **violetto** durante l’elaborazione → LED “respiro” blu/violetto mentre parla  
-- Fine → LED spenti
+- Approach the hand to **≤10 cm** → 2 cyan blinks → 5 s recording  
+- **Violet** LED during processing → blue/violet “breathing” LED while speaking  
+- End → LEDs off
 
 ---
 
-## 🔍 Test e Diagnostica
+## 🔍 Test and Diagnostics
 **ToF:**
 ```bash
-ls /dev/i2c*                 # deve esserci /dev/i2c-1
-sudo i2cdetect -y 1          # dovrebbe mostrare 0x29
+ls /dev/i2c*                 # there should be /dev/i2c-1
+sudo i2cdetect -y 1          # should show 0x29
 ```
 
 **Audio:**
 ```bash
-arecord -l                   # vedi device capture
-aplay -l                     # vedi device playback
-# il tuo I²S spesso usa S32_LE; prova:
+arecord -l                   # see capture devices
+aplay -l                     # see playback devices
+# your I²S often uses S32_LE; try:
 aplay -D hw:0,0 file_s32le.wav
-# o conversione automatica:
-aplay -D plughw:0,0 qualsiasi.wav
+# or automatic conversion:
+aplay -D plughw:0,0 any.wav
 amixer sset Master 95% || amixer sset PCM 95%
 ```
 
 **LED:**
-- DIN → **GPIO13** (pin 33), 5 V, GND comune  
-- Esegui script come **root** (rpi_ws281x usa /dev/mem)  
-- Se errore `mmap()`/`ws2811_init`: riavvia e verifica che GPIO13 sia libero (noi usiamo **PWM1**, non confligge con I²S)
+- DIN → **GPIO13** (pin 33), 5 V, common GND  
+- Run script as **root** (rpi_ws281x uses /dev/mem)  
+- If `mmap()`/`ws2811_init` error: reboot and check that GPIO13 is free (we use **PWM1**, does not conflict with I²S)
 
 ---
 
-## 📁 Struttura Progetto
+## 📁 Project Structure
 ```
 .
-├── talk_5s_gemini_tof_led.py   # script principale
+├── talk_5s_gemini_tof_led.py   # main script
 ├── README.md
-└── .gitignore                  # aggiungi qui file con segreti (mai la chiave!)
+└── .gitignore                  # add secret files here (never the key!)
 ```
 
-**Suggerimento .gitignore**
+**.gitignore Suggestion**
 ```
-# segreti/ambiente
+# secrets/environment
 .env
 *.key
 *.pem
@@ -239,65 +239,65 @@ amixer sset Master 95% || amixer sset PCM 95%
 
 ---
 
-## ⚠️ Note Importanti & Sicurezza
-- Non committare **API key**.  
-- GND **comune** tra tutti i moduli.  
-- Per stabilità I²C su PCB: pull-up 4.7 k su SDA/SCL e condensatori di bypass vicino ai moduli.  
-- Se l’audio accetta solo **S32_LE**, converti i WAV in S32_LE 48 kHz stereo o usa `plughw`.
+## ⚠️ Important Notes & Security
+- Do not commit **API key**.  
+- **GND** common among all modules.  
+- For I²C stability on PCB: 4.7 k pull-up on SDA/SCL and bypass capacitors near the modules.  
+- If the audio accepts only **S32_LE**, convert the WAV to S32_LE 48 kHz stereo or use `plughw`.
 
 ---
 
-## 📄 Licenza
-Scegli la licenza che preferisci (es. MIT). Esempio:
+## 📄 License
+Choose the license you prefer (e.g. MIT). Example:
 
 ```
-MIT License — vedi LICENSE
+MIT License — see LICENSE
 ```
 
 ---
 
-## 🌟 Caratteristiche Tecniche
+## 🌟 Technical Features
 
-| Componente | Specifica | Note |
-|------------|-----------|------|
-| **Piattaforma** | Raspberry Pi Zero/Zero W | Compatibile con Pi 3/4 |
-| **Sensore Prossimità** | VL53L0X ToF | Attivazione ≤10cm |
-| **Audio Input** | INMP441 I²S | Qualità professionale |
-| **Audio Output** | MAX98357A I²S | Amplificatore integrato |
-| **Feedback Visivo** | WS2812 LED Ring | 35-36 LED programmabili |
-| **AI Engine** | Google Gemini | STT + Conversazione + TTS |
-| **Linguaggio** | Python 3 | Librerie ottimizzate |
+| Component | Specification | Notes |
+|-----------|---------------|-------|
+| **Platform** | Raspberry Pi Zero/Zero W | Compatible with Pi 3/4 |
+| **Proximity Sensor** | VL53L0X ToF | Activation ≤10cm |
+| **Audio Input** | INMP441 I²S | Professional quality |
+| **Audio Output** | MAX98357A I²S | Integrated amplifier |
+| **Visual Feedback** | WS2812 LED Ring | 35-36 programmable LEDs |
+| **AI Engine** | Google Gemini | STT + Conversation + TTS |
+| **Language** | Python 3 | Optimized libraries |
 
-## 🤝 Contributi
+## 🤝 Contributions
 
-I contributi sono benvenuti! Per favore:
-1. Fai un fork del progetto
-2. Crea un branch per la tua feature (`git checkout -b feature/AmazingFeature`)
-3. Committa le tue modifiche (`git commit -m 'Add some AmazingFeature'`)
-4. Pusha sul branch (`git push origin feature/AmazingFeature`)
-5. Apri una Pull Request
+Contributions are welcome! Please:
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📞 Supporto
+## 📞 Support
 
-Se hai problemi o domande:
-- Apri un **Issue** su GitHub
-- Controlla la sezione **🔍 Test e Diagnostica** per problemi comuni
-- Verifica che tutti i collegamenti hardware siano corretti
+If you have problems or questions:
+- Open an **Issue** on GitHub
+- Check the **🔍 Test and Diagnostics** section for common issues
+- Verify that all hardware connections are correct
 
 ---
 
-## 📺 Seguici per Altri Progetti
+## 📺 Follow Us for Other Projects
 
 ✍️ **Follow the Ingeimaks channel for new ESP32 projects and other electronics, Arduino and 3D printing content!**
 
-🔗 [**Ingeimaks Channel**](https://github.com/Ingeimaks) - Scopri altri progetti innovativi!
+🔗 [**Ingeimaks Channel**](https://github.com/Ingeimaks) - Discover other innovative projects!
 
 ---
 
 <div align="center">
 
-**⭐ Se questo progetto ti è stato utile, lascia una stella su GitHub! ⭐**
+**⭐ If this project has been useful to you, leave a star on GitHub! ⭐**
 
-*Realizzato con ❤️ per la comunità Raspberry Pi*
+*Made with ❤️ for the Raspberry Pi community*
 
 </div>
