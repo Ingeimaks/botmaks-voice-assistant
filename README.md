@@ -290,7 +290,7 @@ If you have problems or questions:
 
 ✍️ **Follow the Ingeimaks channel for new ESP32 projects and other electronics, Arduino and 3D printing content!**
 
-🔗 [**Ingeimaks Channel**](https://github.com/Ingeimaks) - Discover other innovative projects!
+🔗 [**Ingeimaks Channel**](https://www.youtube.com/Ingeimaks) - Discover other innovative projects!
 
 ---
 
