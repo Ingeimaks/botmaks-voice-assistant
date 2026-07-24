@@ -32,7 +32,7 @@ BOTMAKS is a **completely hands-free** voice assistant designed for Raspberry Pi
 ## 🔧 Hardware Required
 
 ### 🛒 **Components List with Purchase Links**
-
+In qualità di Affiliato Amazon, ricevo un guadagno dagli acquisti idonei. - As an Amazon Associate, I earn from qualifying purchases.
 | Component | Description | Purchase Link |
 |------------|-------------|---------------|
 | **Raspberry Pi Zero W** | Main microcomputer | [🛒 Buy on Amazon](https://amzn.to/4mk3E4O) |
